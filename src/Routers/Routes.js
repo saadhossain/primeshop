@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import Home from '../Componets/Home/Home'
 import Login from "../Componets/Login/Login";
 import Register from "../Componets/Register/Register";
+import Profile from "../Componets/Profile/Profile";
 
 export const routers = createBrowserRouter([
     {
@@ -12,7 +13,8 @@ export const routers = createBrowserRouter([
             {path:'/', element:<Home></Home>},
             {path:'/home', element:<Home></Home>},
             {path:'/login',element:<Login></Login>},
-            {path:'/register', element:<Register></Register>}
+            {path:'/register', element:<Register></Register>},
+            {path:'/profile', element:<Profile></Profile>}
         ]
     }
 ])
