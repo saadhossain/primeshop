@@ -1,11 +1,10 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { AuthContext } from '../../Context/UserContext';
 
 const Login = () => {
     const { userLogin } = useContext(AuthContext);
-    const [successMsg, setSuccessMsg] = useState();
-    const [errorMsg, setErrorMsg] = useState();
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -16,11 +15,12 @@ const Login = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
-            setSuccessMsg('Login Successful...')
+            toast.success('Login Success', {autoClose:500})
             form.reset()
         })
         .catch(err => {
-            setErrorMsg(err.message)
+            const msg = err.message;
+            toast.error(msg, {autoClose:500})
         })
     }
     return (
@@ -31,8 +31,6 @@ const Login = () => {
                         <h1 className="text-3xl font-bold">Login to Your Account</h1>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-                        <p className='text-green-600 px-5 mt-3'>{successMsg ? successMsg : ''}</p>
-                        <p className='text-red-500 px-5 mt-3'>{errorMsg ? errorMsg : ''}</p>
                         <form onSubmit={handleLogin} className="card-body">
                             <div className="form-control">
                                 <label className="label">

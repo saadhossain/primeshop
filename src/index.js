@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import App from './App';
 import UserContext from './Context/UserContext';
 import './index.css';
@@ -10,6 +12,7 @@ root.render(
   <React.StrictMode>
     <UserContext>
       <App />
+      <ToastContainer></ToastContainer>
     </UserContext>
   </React.StrictMode>
 );

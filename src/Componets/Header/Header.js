@@ -4,6 +4,7 @@ import { AuthContext } from '../../Context/UserContext';
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
+    // console.log(user);
     const navigate = useNavigate()
     const handleLogOut = () => {
         logOut()
@@ -25,7 +26,7 @@ const Header = () => {
                         <li><Link to='/orders'>Orders</Link></li>
                         {/* Show user email addrss if user logged in */}
                         {
-                            user?.uid && <li><Link to='/login'>{user.email}</Link></li>
+                            user?.uid && <li><Link to='/login'>{user.displayName}</Link></li>
                         }
                         {/* Show Logout button if user logged in otherwise show login button */}
                         {
