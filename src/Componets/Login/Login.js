@@ -54,7 +54,7 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button type='submit' className="btn btn-primary">Login</button>
+                                <button type='submit' className="btn btn-primary bg-[#018F9B] border-none hover:bg-[#018F9B]">Login</button>
                             </div>
                         </form>
                     </div>
