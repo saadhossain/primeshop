@@ -1,11 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/UserContext';
 import logo from '../../assests/logo.png'
+import {FaBars} from 'react-icons/fa'
+import {GrClose} from 'react-icons/gr'
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
     // console.log(user);
+    const [expand, setExpand] = useState(false)
     const navigate = useNavigate()
     const handleLogOut = () => {
         logOut()
@@ -21,8 +24,8 @@ const Header = () => {
                     <img src={logo} alt="Primeshop logo" className='w-12'/>
                     <h1 className='text-2xl font-bold'>PrimeShop</h1>
                 </Link>
-                <div>
-                    <ul className='flex gap-5 font-semibold'>
+                <div className='flex gap-3 items-center'>
+                    <ul className={`md:flex gap-5 bg-violet-500 py-2 px-10 font-semibold absolute md:static duration-300 ease-in-out ${expand ? 'top-16 right-0' : 'top-[-200px] right-0'}`}>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/shop'>Shop</Link></li>
                         {/* Show user email addrss if user logged in */}
@@ -39,6 +42,11 @@ const Header = () => {
                             : <li><Link to='/login'>Login</Link></li>
                         }
                     </ul>
+                    <div onClick={()=> setExpand(!expand)} className='md:hidden'>
+                        {
+                            expand ? <GrClose/> : <FaBars></FaBars>
+                        }
+                    </div>
                 </div>
             </div>
         </div>
