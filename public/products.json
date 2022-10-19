@@ -1,0 +1,138 @@
+[
+    {
+      "id": "623853b2614a1",
+      "index": 0,
+      "price": 9.99,
+      "picture": "https://burst.shopifycdn.com/photos/single-sprout-in-a-pot_925x.jpg",
+      "name": "Clay Plant Pot",
+      "description": " Classic blown clay pot for plants"
+    },
+    {
+      "id": "623853b261422",
+      "index": 0,
+      "name": "Copper Light",
+      "description": " Stylish copper bedside light",
+      "price": 59.99,
+      "picture": "https://burst.shopifycdn.com/photos/copper-light-in-bedroom_925x.jpg"
+    },
+    {
+      "id": "623853b261423",
+      "index": 0,
+      "name": "Cream Sofa",
+      "description": " Comfortable cream sofa with wooden base",
+      "price": 199.99,
+      "picture": "https://burst.shopifycdn.com/photos/condominium-interior-livingroom_925x.jpg"
+    },
+    {
+      "id": "623853b261424",
+      "index": 0,
+      "name": "Antique Drawers",
+      "description": " Antique wooden chest of drawers",
+      "price": 250,
+      "picture": "https://burst.shopifycdn.com/photos/babys-room_925x.jpg"
+    },
+    {
+      "id": "623853b261425",
+      "index": 0,
+      "name": "White Bed Clothes",
+      "description": " Sleek white bed clothes",
+      "price": 29.99,
+      "picture": "https://burst.shopifycdn.com/photos/bright-hotel-room-bed_925x.jpg"
+    },
+    {
+      "id": "623853b261426",
+      "index": 0,
+      "name": "Pink Armchair",
+      "description": " Stylish pink armchair ",
+      "price": 350,
+      "picture": "https://burst.shopifycdn.com/photos/soft-pink-cushioned-armchair-in-stately-salon_925x.jpg"
+    },
+    {
+      "id": "623853b261427",
+      "index": 0,
+      "name": "Wooden Outdoor Table",
+      "description": " Chic wooden outdoor garden table",
+      "price": 99,
+      "picture": "https://burst.shopifycdn.com/photos/cafe-patio_925x.jpg"
+    },
+    {
+      "id": "623853b261428",
+      "index": 0,
+      "name": "Brown Throw Pillows",
+      "description": "Stylish brown throw pillows",
+      "price": 19.99,
+      "picture": "https://burst.shopifycdn.com/photos/bedroom-bed-with-brown-throw-pillows_925x.jpg"
+    },
+    {
+      "id": "623853b261429",
+      "index": 0,
+      "name": "White Ceramic Pot",
+      "description": "Homemade white ceramic flower pot",
+      "price": 15.99,
+      "picture": "https://burst.shopifycdn.com/photos/house-plant-in-white-pot_925x.jpg"
+    },
+    {
+      "id": "623853b261430",
+      "index": 0,
+      "name": "Yellow watering can",
+      "description": "Vintage vibrant watering can",
+      "price": 40.99,
+      "picture": "https://burst.shopifycdn.com/photos/flowers-in-yellow-watering-can_925x.jpg"
+    },
+    {
+      "id": "623853b261431",
+      "index": 0,
+      "name": "Biodegradable cardboard pots",
+      "description": " Biodegradable outdoor cardboard pots",
+      "price": 12.99,
+      "picture": "https://burst.shopifycdn.com/photos/potted-seeds_925x.jpg"
+    },
+    {
+      "id": "623853b261432",
+      "index": 0,
+      "name": "Grey Sofa",
+      "description": "Large four seater grey sofa",
+      "price": 29.99,
+      "picture": "https://burst.shopifycdn.com/photos/large-grey-sofa-by-brick-wall_925x.jpg"
+    },
+    {
+      "id": "623853b261433",
+      "index": 0,
+      "name": "Wooden outdoor slats",
+      "description": " Wooden outdoor fencing slats ",
+      "price": 25.99,
+      "picture": "https://burst.shopifycdn.com/photos/house-plant-on-wooden-slat-wall_925x.jpg"
+    },
+    {
+      "id": "623853b261434",
+      "index": 0,
+      "name": "Knitted Throw Pillows",
+      "description": " Homemade knitted throw pillows in a variety of colors ",
+      "price": 19.99,
+      "picture": "https://burst.shopifycdn.com/photos/yellow-sofa-with-throw-pillows_925x.jpg"
+    },
+    {
+      "id": "623853b261435",
+      "index": 0,
+      "name": "Vanilla candle",
+      "description": " Vanilla scent candle in jar ",
+      "price": 15.99,
+      "picture": "https://burst.shopifycdn.com/photos/diy-organic-candle_925x.jpg"
+    },
+    {
+      "id": "623853b261436",
+      "index": 0,
+      "name": "Black Beanbag",
+      "description": " Black leather beanbag ",
+      "price": 34.99,
+      "picture": "https://burst.shopifycdn.com/photos/comfortable-living-room-cat_925x.jpg"
+    },
+    {
+      "id": "623853b261437",
+      "index": 0,
+      "name": "Bedside Table",
+      "description": " Wooden bedside table ",
+      "price": 24.99,
+      "picture": "https://burst.shopifycdn.com/photos/dark-wall-bedside-table_925x.jpg"
+    }
+  ]
