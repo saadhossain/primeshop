@@ -1,7 +1,6 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext} from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import UserContext, { AuthContext } from '../../Context/UserContext';
 import { CartContext } from '../../Layout/Main';
 import { deleCartFromLocal, removeFromLocalDB } from '../../Utility/LocalDB';
 import CartItem from './CartItem';
@@ -10,8 +9,7 @@ const Cart = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const from = location.state?.from?.pathname || '/shop'
-    //Get the user from context
-    const {user} = useContext(AuthContext)
+
     //Set Place order button disabled
     const [cart, setCart] = useContext(CartContext)
     //Handle Removed From Cart
@@ -26,6 +24,7 @@ const Cart = () => {
     const handlePlaceOrder = () => {
         console.log('order placed');
         deleCartFromLocal()
+        setCart([]);
         navigate(from, {replace: true})
         toast.success('Order Placed', {autoClose:500})
     }
