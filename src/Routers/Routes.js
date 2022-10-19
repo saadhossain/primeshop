@@ -21,7 +21,7 @@ export const routers = createBrowserRouter([
             {path:'/shop', element:<Shop></Shop>},
             {path:'/login',element:<Login></Login>},
             {path:'/register', element:<Register></Register>},
-            {path:'/profile', element:<Profile></Profile>},
+            {path:'/profile', element:<PrivateRouter><Profile></Profile></PrivateRouter>},
             {path:'/cart', element:<PrivateRouter><Cart></Cart></PrivateRouter>},
             {path:'/orders', element:<PrivateRouter><Orders></Orders></PrivateRouter>}
         ]
