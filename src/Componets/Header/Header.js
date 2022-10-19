@@ -23,10 +23,12 @@ const Header = () => {
                     <ul className='flex gap-5 font-semibold'>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/shop'>Shop</Link></li>
-                        <li><Link to='/orders'>Orders</Link></li>
                         {/* Show user email addrss if user logged in */}
                         {
-                            user?.uid && <li><Link to='/profile'>{user.displayName}</Link></li>
+                            user?.uid && <>
+                            <li><Link to='/orders'>Orders</Link></li>
+                            <li><Link to='/profile'>{user.displayName}</Link></li>
+                            </>
                         }
                         {/* Show Logout button if user logged in otherwise show login button */}
                         {

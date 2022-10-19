@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { AuthContext } from '../../Context/UserContext';
 
 const Login = () => {
     const { userLogin } = useContext(AuthContext);
-
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname  || '/profile'
     const handleLogin = (e) => {
         e.preventDefault();
         const form = e.target;
@@ -17,6 +19,7 @@ const Login = () => {
             console.log(user);
             toast.success('Login Success', {autoClose:500})
             form.reset()
+            navigate(from, {replace:true})
         })
         .catch(err => {
             const msg = err.message;
