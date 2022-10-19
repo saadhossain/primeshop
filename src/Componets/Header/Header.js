@@ -30,7 +30,7 @@ const Header = () => {
                     <ul className={`md:flex gap-5 bg-[#018F9B] py-2 px-10 font-semibold absolute md:static duration-300 ease-in-out ${expand ? 'top-16 right-0' : 'top-[-200px] right-0'}`}>
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/shop'>Shop</Link></li>
-                        <li><Link to='/cart'>Cart<sup>{cart.length}</sup></Link></li>
+                        <li><Link to='/cart'>Cart<sup className='font-bolder'>{cart.length}</sup></Link></li>
                         {/* Show user email addrss if user logged in */}
                         {
                             user?.uid && <>
