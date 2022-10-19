@@ -35,25 +35,25 @@ const Cart = () => {
     }
 
     return (
-        <div className='w-11/12 md:w-2/5 mx-auto my-10 bg-slate-200 rounded-lg p-10'>
+        <div className='w-11/12 md:w-2/5 mx-auto my-10 bg-[#018F9B] rounded-lg p-10'>
             <div>
                 {
                     cart.length ? <>
-                        <h2 className='text-xl font-bold text-[#10181a]'>Review Cart Items</h2>
+                        <h2 className='text-xl font-bold text-white'>Review Cart Items</h2>
                         {cart.map(product => <CartItem key={product.id} product={product} handleRemoveItem={handleRemoveItem}></CartItem>)}
                         <div className='border-y-2 border-[#018F9B] my-5 py-5 text-right'>
-                            <h2 className='text-xl font-semibold text-[#10181a]'>Total Price : ${total}</h2>
-                            <h2 className='text-[#10181a]'>Not Including TAX and Shipping Cost</h2>
+                            <h2 className='text-xl font-semibold text-white'>Total Price : ${total}</h2>
+                            <h2 className='text-[#dfdfdf]'>Not Including TAX and Shipping Cost</h2>
                         </div>
                         <div className='flex mt-5 gap-2 justify-center'>
-                            <Link to='/shop'><button className='border border-[#018F9B] py-2 px-3 rounded text-[#018F9B] font-bold'>Continue Shopping</button></Link>
-                            <Link to='/orders'><button onClick={handlePlaceOrder} className='bg-[#018F9B] py-2 px-3 rounded text-white font-bold'>Place Order</button></Link>
+                            <Link to='/shop'><button className='flex mx-auto mt-5 bg-white py-2 px-3 rounded text-[#018F9B] font-bold duration-300'>Continue Shopping</button></Link>
+                            <Link to='/orders'><button onClick={handlePlaceOrder} className='flex mx-auto mt-5 bg-white py-2 px-3 rounded text-[#018F9B] font-bold duration-300 ease-in-out border hover:border-white hover:text-white hover:bg-transparent'>Place Order</button></Link>
                         </div>
                         
                     </> : <>
-                        <h1 className='text-3xl font-bold text-center text-[#018F9B]'>No Product In  Cart</h1>
-                        <h1 className='text-xl font-bold text-center text-[#10181a]'>First Add some products...</h1>
-                        <Link to='/shop'><button className='flex mx-auto mt-5 bg-[#018F9B] py-2 px-3 rounded text-white font-bold'>Back to Shop</button></Link>
+                        <h1 className='text-3xl font-bold text-center text-white'>No Product In  Cart</h1>
+                        <h1 className='text-xl font-bold text-center text-white'>First Add some products...</h1>
+                        <Link to='/shop'><button className='flex mx-auto mt-5 bg-white py-2 px-3 rounded text-[#018F9B] font-bold duration-300 ease-in-out border hover:border-white hover:text-white hover:bg-transparent'>Back to Shop</button></Link>
                     </>
                 }
             </div>
