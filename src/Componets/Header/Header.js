@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/UserContext';
+import logo from '../../assests/logo.png'
 
 const Header = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -16,9 +17,10 @@ const Header = () => {
     return (
         <div className='bg-violet-500 py-2'>
             <div className='w-10/12 mx-auto flex justify-between items-center text-white'>
-                <div>
+                <Link to='/' className='flex items-center gap-2'>
+                    <img src={logo} alt="Primeshop logo" className='w-12'/>
                     <h1 className='text-2xl font-bold'>PrimeShop</h1>
-                </div>
+                </Link>
                 <div>
                     <ul className='flex gap-5 font-semibold'>
                         <li><Link to='/'>Home</Link></li>
